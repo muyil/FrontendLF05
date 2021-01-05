@@ -1,3 +1,16 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+#root {
+  background: #efefef;
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
 }
@@ -15,7 +28,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +47,127 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background: darkgrey;
+  color: white;
+  margin: 4px;
+}
+
+.button-notPicked {
+  background: darkgray;
+}
+
+.zutaten-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.single-zutat {
+  width: 200px;
+  height: 100px;
+  background: #fff;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+
+.single-zutat:hover {
+  cursor: pointer;
+  background: lightgray;
+}
+
+.single-rezept {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6); 
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.single-rezept > button {
+  background: darkgray;
+  align-self: center;
+  height: 50px;
+  width: 200px;
+
+}
+
+.single-rezept-zutaten {
+  position: relative;
+}
+
+.single-rezept-zutaten > .single-zutat {
+  background: transparent;
+  color: white;
+  height: auto;
+  width: auto;
+  display: flex;
+  margin: 0px;
+
+}
+
+.single-rezept-zutaten .single-zutat:hover {
+  cursor: default;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.warenkorb-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.warenkorb-elements {
+  background:darkgray;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px;
+  border: thin solid black;
+}
+
+.warenkorb-elements button {
+  float: right;
+  color: red;
+  background: lightgrey;
+  margin-left:10px;
+  cursor:pointer;
+  border-radius: 5px;
+}
+
+.bestellung-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.single-bestellung {
+  width: 300px;
+  height: 100px;
+  background: #fff;
+  display: flex;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
